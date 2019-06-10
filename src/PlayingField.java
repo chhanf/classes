@@ -13,6 +13,14 @@ public class PlayingField {
         }
     }
 
+    public void addSquares(Tetromino t){
+        for (int i = 0; i < t.shapeMatrix.length; i++){
+            for (int j = 0; j < t.shapeMatrix[0].length; j++){
+                fieldMatrix[t.position[0] +  i][t.position[1] + j] = t.shapeMatrix[i][j];
+            }
+        }
+    }
+
     private boolean checkLine(int i){
         for (int j = 0; j < 10; j++){
             if (fieldMatrix[i][j] == 0){
@@ -38,14 +46,6 @@ public class PlayingField {
     private void pushLine(int i){
         for(int j = i; j > 0; j--){
             swapLines(j, j-1);
-        }
-    }
-
-    public void addSquares(Tetromino t){
-        for (int i = 0; i < t.shapeMatrix.length; i++){
-            for (int j = 0; j < t.shapeMatrix[0].length; j++){
-                fieldMatrix[t.position[0] +  i][t.position[1] + j] = t.shapeMatrix[i][j];
-            }
         }
     }
 }
