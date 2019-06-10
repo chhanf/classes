@@ -42,6 +42,10 @@ public class PlayingField {
     }
 
     public void addSquares(Tetromino t){
-        
+        for (int i = 0; i < t.shapeMatrix.length; i++){
+            for (int j = 0; j < t.shapeMatrix[0].length; j++){
+                fieldMatrix[t.position[0] +  i][t.position[1] + j] = t.shapeMatrix[i][j];
+            }
+        }
     }
 }
