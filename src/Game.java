@@ -14,31 +14,69 @@ public class Game {
     }
 
     boolean checkDead(){
-        return false;
+        return checkCollision();
     }
 
     boolean checkDrop(){
+        tetromino.drop();
+        if(checkCollision()){
+            tetromino.position[1] -= 1;
+            return true;
+        }
+        tetromino.position[1] -= 1;
         return false;
     }
 
     boolean checkMoveLeft(){
+        tetromino.moveLeft();
+        if(checkCollision()){
+            tetromino.moveRight();
+            return true;
+        }
+        tetromino.moveRight();
         return false;
     }
 
     boolean checkMoveRight(){
+        tetromino.moveRight();
+        if(checkCollision()){
+            tetromino.moveLeft();
+            return true;
+        }
+        tetromino.moveLeft();
         return false;
     }
 
     boolean checkRotateLeft(){
+        tetromino.rotateLeft();
+        if(checkCollision()){
+            tetromino.rotateRight();
+            return true;
+        }
+        tetromino.rotateRight();
         return false;
     }
 
     boolean checkRotateRight(){
+        tetromino.rotateRight();
+        if(checkCollision()){
+            tetromino.rotateLeft();
+            return true;
+        }
+        tetromino.rotateLeft();
         return false;
     }
 
     void advanceDropCounter(){
-
+        dropCounter += 1;
+        if(dropCounter == dropSpeed){
+            dropCounter = 0;
+            if(checkDrop()){
+                tetromino.drop();
+            } else {
+                playingField.addSquares(tetromino);
+            }
+        }
     }
 
     void spawnNextTetromino(){
@@ -71,5 +109,17 @@ public class Game {
                 System.out.println("Should never happen");
                 break;
         }
+    }
+
+    private boolean checkCollision(){
+        for(int i = 0; i < tetromino.shapeMatrix.length; i++){
+            for(int j = 0; j < tetromino.shapeMatrix[0].length; j++){
+                if(playingField.fieldMatrix[tetromino.position[0] + i][tetromino.position[1] + j]
+                        == tetromino.shapeMatrix[i][j]){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
