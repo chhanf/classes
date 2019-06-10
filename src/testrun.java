@@ -277,7 +277,27 @@ public class testrun {
 
         t_piece.rotateRight();
         t_piece.updateShapeMatrix();
-    }
 
+        int[][] arr = new int[3][3];
+
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 3; j++){
+                arr[i][j] = i;
+            }
+        }
+        arr[1] = new int[3];
+
+        int[] temp = new int[3];
+
+        temp = arr[2];
+        arr[2] = arr[1];
+        arr[1] = temp;
+
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 3; j++){
+                System.out.print(arr[i][j]);
+            }
+        }
+    }
 }
 
