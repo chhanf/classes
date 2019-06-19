@@ -1,3 +1,5 @@
+package tetris;
+
 public class PlayingField {
     byte[][] fieldMatrix;
 

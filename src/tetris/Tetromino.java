@@ -1,3 +1,5 @@
+package tetris;
+
 public class Tetromino {
     byte[][] shapeMatrix;
     byte color;

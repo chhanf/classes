@@ -1,3 +1,5 @@
+package tetris;
+
 public class Square_Piece extends Tetromino {
 
     public Square_Piece() {

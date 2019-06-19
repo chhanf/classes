@@ -1,3 +1,5 @@
+package tetris;
+
 import java.util.Random;
 
 public class Game {

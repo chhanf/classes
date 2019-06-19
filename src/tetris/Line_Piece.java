@@ -1,3 +1,5 @@
+package tetris;
+
 public class Line_Piece extends Tetromino {
 
     public Line_Piece() {

@@ -1,8 +1,10 @@
+package tetris;
+
 public class testrun {
     public static void main(String[] args) {
-/*        Tetromino tetromino = new Tetromino();
+/*        tetris.Tetromino tetromino = new tetris.Tetromino();
 
-        System.out.println("Tetromino-attributes:");
+        System.out.println("tetris.Tetromino-attributes:");
         System.out.println("Color: " + tetromino.color);
         System.out.println("Position: (" + tetromino.position[0] + ", " + tetromino.position[1] + ")");
 
@@ -20,7 +22,7 @@ public class testrun {
         Square_Piece squarePiece = new Square_Piece();
         squarePiece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-Square_Piece:");
+        System.out.println("Shapematrix-tetris.Square_Piece:");
         System.out.println("(" + squarePiece.shapeMatrix[0][0] + ", " + squarePiece.shapeMatrix[0][1] + ", "
                 + squarePiece.shapeMatrix[0][2] + ", " + squarePiece.shapeMatrix[0][3] + ")");
         System.out.println("(" + squarePiece.shapeMatrix[1][0] + ", " + squarePiece.shapeMatrix[1][1] + ", "
@@ -33,7 +35,7 @@ public class testrun {
         Line_Piece linePiece = new Line_Piece();
         linePiece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-Line_Piece:");
+        System.out.println("Shapematrix-tetris.Line_Piece:");
         System.out.println("(" + linePiece.shapeMatrix[0][0] + ", " + linePiece.shapeMatrix[0][1] + ", "
                 + linePiece.shapeMatrix[0][2] + ", " + linePiece.shapeMatrix[0][3] + ")");
         System.out.println("(" + linePiece.shapeMatrix[1][0] + ", " + linePiece.shapeMatrix[1][1] + ", "
@@ -46,7 +48,7 @@ public class testrun {
         linePiece.rotateRight();
         linePiece.updateShapeMatrix();
 
-        System.out.println("rotated Shapematrix-Line_Piece:");
+        System.out.println("rotated Shapematrix-tetris.Line_Piece:");
         System.out.println("(" + linePiece.shapeMatrix[0][0] + ", " + linePiece.shapeMatrix[0][1] + ", "
                 + linePiece.shapeMatrix[0][2] + ", " + linePiece.shapeMatrix[0][3] + ")");
         System.out.println("(" + linePiece.shapeMatrix[1][0] + ", " + linePiece.shapeMatrix[1][1] + ", "
@@ -59,7 +61,7 @@ public class testrun {
         J_Piece j_piece = new J_Piece();
         j_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-J_Piece Rotation_0:");
+        System.out.println("Shapematrix-tetris.J_Piece Rotation_0:");
         System.out.println("(" + j_piece.shapeMatrix[0][0] + ", " + j_piece.shapeMatrix[0][1] + ", "
                 + j_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + j_piece.shapeMatrix[1][0] + ", " + j_piece.shapeMatrix[1][1] + ", "
@@ -70,7 +72,7 @@ public class testrun {
         j_piece.rotateRight();
         j_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-J_Piece Rotation_90:");
+        System.out.println("Shapematrix-tetris.J_Piece Rotation_90:");
         System.out.println("(" + j_piece.shapeMatrix[0][0] + ", " + j_piece.shapeMatrix[0][1] + ", "
                 + j_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + j_piece.shapeMatrix[1][0] + ", " + j_piece.shapeMatrix[1][1] + ", "
@@ -81,7 +83,7 @@ public class testrun {
         j_piece.rotateRight();
         j_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-J_Piece Rotation_180:");
+        System.out.println("Shapematrix-tetris.J_Piece Rotation_180:");
         System.out.println("(" + j_piece.shapeMatrix[0][0] + ", " + j_piece.shapeMatrix[0][1] + ", "
                 + j_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + j_piece.shapeMatrix[1][0] + ", " + j_piece.shapeMatrix[1][1] + ", "
@@ -92,7 +94,7 @@ public class testrun {
         j_piece.rotateRight();
         j_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-J_Piece Rotation_270:");
+        System.out.println("Shapematrix-tetris.J_Piece Rotation_270:");
         System.out.println("(" + j_piece.shapeMatrix[0][0] + ", " + j_piece.shapeMatrix[0][1] + ", "
                 + j_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + j_piece.shapeMatrix[1][0] + ", " + j_piece.shapeMatrix[1][1] + ", "
@@ -103,7 +105,7 @@ public class testrun {
         L_Piece l_piece = new L_Piece();
         l_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-L_Piece Rotation_0:");
+        System.out.println("Shapematrix-tetris.L_Piece Rotation_0:");
         System.out.println("(" + l_piece.shapeMatrix[0][0] + ", " + l_piece.shapeMatrix[0][1] + ", "
                 + l_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + l_piece.shapeMatrix[1][0] + ", " + l_piece.shapeMatrix[1][1] + ", "
@@ -114,7 +116,7 @@ public class testrun {
         l_piece.rotateRight();
         l_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-L_Piece Rotation_90:");
+        System.out.println("Shapematrix-tetris.L_Piece Rotation_90:");
         System.out.println("(" + l_piece.shapeMatrix[0][0] + ", " + l_piece.shapeMatrix[0][1] + ", "
                 + l_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + l_piece.shapeMatrix[1][0] + ", " + l_piece.shapeMatrix[1][1] + ", "
@@ -125,7 +127,7 @@ public class testrun {
         l_piece.rotateRight();
         l_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-L_Piece Rotation_180:");
+        System.out.println("Shapematrix-tetris.L_Piece Rotation_180:");
         System.out.println("(" + l_piece.shapeMatrix[0][0] + ", " + l_piece.shapeMatrix[0][1] + ", "
                 + l_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + l_piece.shapeMatrix[1][0] + ", " + l_piece.shapeMatrix[1][1] + ", "
@@ -136,7 +138,7 @@ public class testrun {
         l_piece.rotateRight();
         l_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-L_Piece Rotation_270:");
+        System.out.println("Shapematrix-tetris.L_Piece Rotation_270:");
         System.out.println("(" + l_piece.shapeMatrix[0][0] + ", " + l_piece.shapeMatrix[0][1] + ", "
                 + l_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + l_piece.shapeMatrix[1][0] + ", " + l_piece.shapeMatrix[1][1] + ", "
@@ -147,7 +149,7 @@ public class testrun {
         S_Piece s_piece = new S_Piece();
         s_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-S_Piece Rotation_0:");
+        System.out.println("Shapematrix-tetris.S_Piece Rotation_0:");
         System.out.println("(" + s_piece.shapeMatrix[0][0] + ", " + s_piece.shapeMatrix[0][1] + ", "
                 + s_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + s_piece.shapeMatrix[1][0] + ", " + s_piece.shapeMatrix[1][1] + ", "
@@ -158,7 +160,7 @@ public class testrun {
         s_piece.rotateRight();
         s_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-S_Piece Rotation_90:");
+        System.out.println("Shapematrix-tetris.S_Piece Rotation_90:");
         System.out.println("(" + s_piece.shapeMatrix[0][0] + ", " + s_piece.shapeMatrix[0][1] + ", "
                 + s_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + s_piece.shapeMatrix[1][0] + ", " + s_piece.shapeMatrix[1][1] + ", "
@@ -169,7 +171,7 @@ public class testrun {
         s_piece.rotateRight();
         s_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-S_Piece Rotation_180:");
+        System.out.println("Shapematrix-tetris.S_Piece Rotation_180:");
         System.out.println("(" + s_piece.shapeMatrix[0][0] + ", " + s_piece.shapeMatrix[0][1] + ", "
                 + s_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + s_piece.shapeMatrix[1][0] + ", " + s_piece.shapeMatrix[1][1] + ", "
@@ -180,7 +182,7 @@ public class testrun {
         s_piece.rotateRight();
         s_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-S_Piece Rotation_270:");
+        System.out.println("Shapematrix-tetris.S_Piece Rotation_270:");
         System.out.println("(" + s_piece.shapeMatrix[0][0] + ", " + s_piece.shapeMatrix[0][1] + ", "
                 + s_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + s_piece.shapeMatrix[1][0] + ", " + s_piece.shapeMatrix[1][1] + ", "
@@ -191,7 +193,7 @@ public class testrun {
         Z_Piece z_piece = new Z_Piece();
         z_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-Z_Piece Rotation_0:");
+        System.out.println("Shapematrix-tetris.Z_Piece Rotation_0:");
         System.out.println("(" + z_piece.shapeMatrix[0][0] + ", " + z_piece.shapeMatrix[0][1] + ", "
                 + z_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + z_piece.shapeMatrix[1][0] + ", " + z_piece.shapeMatrix[1][1] + ", "
@@ -202,7 +204,7 @@ public class testrun {
         z_piece.rotateRight();
         z_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-Z_Piece Rotation_90:");
+        System.out.println("Shapematrix-tetris.Z_Piece Rotation_90:");
         System.out.println("(" + z_piece.shapeMatrix[0][0] + ", " + z_piece.shapeMatrix[0][1] + ", "
                 + z_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + z_piece.shapeMatrix[1][0] + ", " + z_piece.shapeMatrix[1][1] + ", "
@@ -213,7 +215,7 @@ public class testrun {
         z_piece.rotateRight();
         z_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-Z_Piece Rotation_180:");
+        System.out.println("Shapematrix-tetris.Z_Piece Rotation_180:");
         System.out.println("(" + z_piece.shapeMatrix[0][0] + ", " + z_piece.shapeMatrix[0][1] + ", "
                 + z_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + z_piece.shapeMatrix[1][0] + ", " + z_piece.shapeMatrix[1][1] + ", "
@@ -223,7 +225,7 @@ public class testrun {
 
         z_piece.rotateRight();
         z_piece.updateShapeMatrix();
-        System.out.println("Shapematrix-Z_Piece Rotation_270:");
+        System.out.println("Shapematrix-tetris.Z_Piece Rotation_270:");
         System.out.println("(" + z_piece.shapeMatrix[0][0] + ", " + z_piece.shapeMatrix[0][1] + ", "
                 + z_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + z_piece.shapeMatrix[1][0] + ", " + z_piece.shapeMatrix[1][1] + ", "
@@ -234,7 +236,7 @@ public class testrun {
         T_Piece t_piece = new T_Piece();
         t_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-T_Piece Rotation_0:");
+        System.out.println("Shapematrix-tetris.T_Piece Rotation_0:");
         System.out.println("(" + t_piece.shapeMatrix[0][0] + ", " + t_piece.shapeMatrix[0][1] + ", "
                 + t_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + t_piece.shapeMatrix[1][0] + ", " + t_piece.shapeMatrix[1][1] + ", "
@@ -245,7 +247,7 @@ public class testrun {
         t_piece.rotateRight();
         t_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-T_Piece Rotation_90:");
+        System.out.println("Shapematrix-tetris.T_Piece Rotation_90:");
         System.out.println("(" + t_piece.shapeMatrix[0][0] + ", " + t_piece.shapeMatrix[0][1] + ", "
                 + t_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + t_piece.shapeMatrix[1][0] + ", " + t_piece.shapeMatrix[1][1] + ", "
@@ -256,7 +258,7 @@ public class testrun {
         t_piece.rotateRight();
         t_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-T_Piece Rotation_180:");
+        System.out.println("Shapematrix-tetris.T_Piece Rotation_180:");
         System.out.println("(" + t_piece.shapeMatrix[0][0] + ", " + t_piece.shapeMatrix[0][1] + ", "
                 + t_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + t_piece.shapeMatrix[1][0] + ", " + t_piece.shapeMatrix[1][1] + ", "
@@ -267,7 +269,7 @@ public class testrun {
         t_piece.rotateRight();
         t_piece.updateShapeMatrix();
 
-        System.out.println("Shapematrix-T_Piece Rotation_270:");
+        System.out.println("Shapematrix-tetris.T_Piece Rotation_270:");
         System.out.println("(" + t_piece.shapeMatrix[0][0] + ", " + t_piece.shapeMatrix[0][1] + ", "
                 + t_piece.shapeMatrix[0][2] + ")");
         System.out.println("(" + t_piece.shapeMatrix[1][0] + ", " + t_piece.shapeMatrix[1][1] + ", "
