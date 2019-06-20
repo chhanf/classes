@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1ade01c-62c3-426b-9c14-8d76f3edc45d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetris_tetromino_testclass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jetris_tetromino_testclass.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/J_Piece$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/J_Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/L_Piece$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/L_Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Line_Piece$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Line_Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/PlayingField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/S_Piece$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/S_Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Square_Piece$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Square_Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/T_Piece$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/T_Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Tetromino$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Tetromino$ShapeState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Tetromino.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Z_Piece$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/Z_Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jetris_tetromino_testclass/testrun.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tetris/View.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -63,14 +39,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="624">
+              <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tetris/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tetris/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -109,6 +103,7 @@
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/tetris/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/tetris/View.java" />
       </list>
     </option>
   </component>
@@ -122,42 +117,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="jetris_tetromino_testclass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jetris_tetromino_testclass" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="classes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="jetris_tetromino_testclass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jetris_tetromino_testclass" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="classes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jetris_tetromino_testclass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jetris_tetromino_testclass" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="classes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="jetris_tetromino_testclass" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jetris_tetromino_testclass" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="classes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classes" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tetris" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560958311933" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561046820031" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -230,7 +231,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -238,10 +239,9 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Learn" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15709047" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16107382" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.32922733" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32922733" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.3281075" />
@@ -253,7 +253,7 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.32922733" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -262,6 +262,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="8" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -269,17 +270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tetris/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -365,11 +355,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="624">
+          <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tetris/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tetris/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
