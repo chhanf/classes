@@ -114,10 +114,10 @@ public class Game {
     }
 
     private boolean checkCollision(){
-        for(int i = 0; i < tetromino.shapeMatrix.length; i++){
-            for(int j = 0; j < tetromino.shapeMatrix[0].length; j++){
-                if(playingField.fieldMatrix[tetromino.position[0] + i][tetromino.position[1] + j]
-                        == tetromino.shapeMatrix[i][j]){
+        for(byte i = 0; i < tetromino.shapeMatrix.length; i++){
+            for(byte j = 0; j < tetromino.shapeMatrix[0].length; j++){
+                if(playingField.fieldMatrix[tetromino.position[0] + i][tetromino.position[1] + j] != 0
+                        && tetromino.shapeMatrix[i][j] != 0){
                     return true;
                 }
             }

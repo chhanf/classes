@@ -8,7 +8,8 @@ public class Square_Piece extends Tetromino {
         shapeMatrix = new byte[4][4];
         position = new byte[2];
         position[0] = 3;
-        position[1] = 1;
+        position[1] = 6;
+        name = "square_piece";
 
     }
 

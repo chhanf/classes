@@ -7,8 +7,9 @@ public class Z_Piece extends Tetromino {
         color = 2;
         shapeMatrix = new byte[3][3];
         position = new byte[2];
-        position[0] = 4;
-        position[1] = 1;
+        position[0] = 3;
+        position[1] = 7;
+        name = "z_piece";
     }
 
     void updateShapeMatrix(){

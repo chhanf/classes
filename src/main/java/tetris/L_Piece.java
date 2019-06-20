@@ -1,14 +1,15 @@
 package tetris;
 
-public class J_Piece extends Tetromino {
+public class L_Piece extends Tetromino {
 
-    public J_Piece() {
+    public L_Piece() {
         super();
-        color = 1;
+        color = 2;
         shapeMatrix = new byte[3][3];
         position = new byte[2];
-        position[0] = 4;
-        position[1] = 1;
+        position[0] = 3;
+        position[1] = 7;
+        name = "l_piece";
     }
 
     void updateShapeMatrix(){
@@ -22,7 +23,7 @@ public class J_Piece extends Tetromino {
                 shapeMatrix[1][0]=1;
                 shapeMatrix[1][1]=1;
                 shapeMatrix[1][2]=1;
-                shapeMatrix[2][2]=1;
+                shapeMatrix[2][0]=1;
                 break;
             case Rotation_90:
                 for(byte i = 0; i < 3; i++){
@@ -30,9 +31,9 @@ public class J_Piece extends Tetromino {
                         shapeMatrix[i][j] = 0;
                     }
                 }
+                shapeMatrix[0][0]=1;
                 shapeMatrix[0][1]=1;
                 shapeMatrix[1][1]=1;
-                shapeMatrix[2][0]=1;
                 shapeMatrix[2][1]=1;
                 break;
             case Rotation_180:
@@ -41,7 +42,7 @@ public class J_Piece extends Tetromino {
                         shapeMatrix[i][j] = 0;
                     }
                 }
-                shapeMatrix[0][0]=1;
+                shapeMatrix[0][2]=1;
                 shapeMatrix[1][0]=1;
                 shapeMatrix[1][1]=1;
                 shapeMatrix[1][2]=1;
@@ -53,11 +54,10 @@ public class J_Piece extends Tetromino {
                     }
                 }
                 shapeMatrix[0][1]=1;
-                shapeMatrix[0][2]=1;
                 shapeMatrix[1][1]=1;
                 shapeMatrix[2][1]=1;
+                shapeMatrix[2][2]=1;
                 break;
         }
     }
 }
-

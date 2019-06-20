@@ -5,6 +5,7 @@ public class Tetromino {
     byte color;
     byte[] position;
     ShapeState shapeState;
+    String name;
 
     public Tetromino(){
         this.shapeState = ShapeState.Rotation_0;
@@ -19,15 +20,15 @@ public class Tetromino {
 
 
     void moveLeft(){
-        position[0] = (byte) (position[0] - 1);
+        position[1] = (byte) (position[1] - 1);
     }
 
     void moveRight(){
-        position[0] = (byte) (position[0] + 1);
+        position[1] = (byte) (position[1] + 1);
     }
 
     void drop(){
-        position[1] = (byte) (position[1] + 1);
+        position[0] = (byte) (position[0] + 1);
     }
 
     void rotateLeft() {
